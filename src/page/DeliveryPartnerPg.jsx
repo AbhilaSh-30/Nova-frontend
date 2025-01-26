@@ -7,6 +7,9 @@ const DeliveryPartner = () => {
         <>
             <nav className="navbar">
                 <div className="logo">NOVA</div>
+                <div className="nav-links">
+                    <a href={`/`} className="nav-link">Home</a>
+                </div>
             </nav>
             <div className="delivery-partner-info">
                 <div className="box">

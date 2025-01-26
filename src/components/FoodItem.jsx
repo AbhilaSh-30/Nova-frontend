@@ -1,25 +1,29 @@
-import React,{useState} from 'react';
-import '../styles/FoodItem.css';
+import React, { useState } from "react";
+import "../styles/FoodItem.css";
 
-const FoodItem = () => {
+const FoodItem = ({ name, price, isVeg, onQuantityChange }) => {
   const [quantity, setQuantity] = useState(0);
 
   const incrementQuantity = () => {
-    setQuantity(quantity + 1);
+    const newQuantity = quantity + 1;
+    setQuantity(newQuantity);
+    onQuantityChange(name, price, newQuantity);
   };
 
   const decrementQuantity = () => {
     if (quantity > 0) {
-      setQuantity(quantity - 1);
+      const newQuantity = quantity - 1;
+      setQuantity(newQuantity);
+      onQuantityChange(name, price, newQuantity);
     }
   };
 
   return (
     <div className="food-item">
       <div className="details">
-        <div className="name">Paneer Qt's</div>
-        <div className="price">Rs.240</div>
-        <div className="veg-icon">●</div>
+        <div className="name">{name}</div>
+        <div className="price">₹{price.toFixed(2)}</div>
+        <div className={`${isVeg ? "veg-icon" : "non-veg-icon"}`}>●</div>
       </div>
       <div className="controls">
         <button className="decrement" onClick={decrementQuantity}>−</button>
@@ -28,6 +32,6 @@ const FoodItem = () => {
       </div>
     </div>
   );
-}
+};
 
 export default FoodItem;

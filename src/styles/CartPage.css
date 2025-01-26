@@ -101,9 +101,10 @@ body {
 
 .form-section button {
   background-color: red;
+  font-family: "Iceberg", sans-serif;
   color: #fff;
   padding: 12px;
-  width: 520px;
+  width: 530px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -146,6 +147,7 @@ body {
   width: 100%;
 }
 
+.item span,
 .bill-item span,
 .total span {
   width: 209px;
@@ -157,7 +159,7 @@ body {
 }
 
 .item-details .rate {
-  margin-left: 183px;
+  margin-left: 240px;
 }
 
 .total{
@@ -170,7 +172,8 @@ body {
   padding: 20px;
   text-align: center;
   margin-top: 20px;
-  width: 520px;
+  margin-bottom: 20px;
+  width: 530px;
   box-sizing: border-box;
   border-radius: 5px;
 }

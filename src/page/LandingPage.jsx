@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import FoodSlider from "../components/FoodSlider";
 import slide1 from "../assets/slide-1.png"
 import del from "../assets/deli.png"
 import deli from "../assets/del.png"
-import guy from "../assets/guy.jpg"
+import guy from "../assets/guy.jpeg"
 import bg from "../assets/bg.jpeg"
 import '../styles/LandingPage.css'
 
 const LandingPage=()=>{
+    const navigate = useNavigate();
+
+    const handleClick=()=>{
+        navigate(`/rl`);
+    }
     return(
         <>
             <nav className="navbar">
@@ -16,7 +22,7 @@ const LandingPage=()=>{
                     <div class="dropdown">
                         <button class="dropbtn">Career</button>
                         <div class="dropdown-content">
-                            <a href={`/rs`}>Restaurant</a>
+                            {/* <a href={`/rs`}>Restaurant</a> */}
                             <a href={`/ds`}>Delivery Partner</a>
                         </div>
                     </div>
@@ -30,7 +36,7 @@ const LandingPage=()=>{
                     <h1 className="slogan">Satisfy Your Hunger, Anytime, Anywhere!</h1>
                     <div className="search-bar">
                         <input type="text" placeholder="Coimbatore" className="search-input" />
-                        <button className="search-button">end hunger</button>
+                        <button className="search-button" onClick={()=>handleClick()}>end hunger</button>
                     </div>
                 </div>
             </div>

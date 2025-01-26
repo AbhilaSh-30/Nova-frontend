@@ -28,7 +28,7 @@ function App() {
         <Route path="/rsi" element={<Rest_SignIn />} />
         <Route path='/ds' element={<Del_SignUp />} />
         <Route path="/dsi" element={<Del_SignIn />} />
-        <Route path="/hotel" element={<HotelMain />} />
+        <Route path="/hotel/:hotelName" element={<HotelMain />} />
       </Routes>
     </div>
   )

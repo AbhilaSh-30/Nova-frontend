@@ -1,8 +1,14 @@
-import React, { useEffect, useRef } from 'react';
-import '../styles/SignUp.css';
-import signupImage from '../assets/signup.jpeg';
+import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import "../styles/SignUp.css";
+import signupImage from "../assets/signup.jpeg";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/signIn`);
+  };
   return (
     <div className="signup-container">
       <div className="image-section">
@@ -15,9 +21,11 @@ const SignUp = () => {
           <input type="tel" placeholder="Phone Number" />
           <input type="text" placeholder="Address" />
           <input type="text" placeholder="Pin code" />
-          <button type="submit">Sign Up</button>
+          <button type="submit" onClick={()=>handleClick()}>Sign Up</button>
         </form>
-        <p>Have an account? <a href={`/signIn`}>Sign In</a></p>
+        <p>
+          Have an account? <a href={`/signIn`}>Sign In</a>
+        </p>
       </div>
     </div>
   );

@@ -17,20 +17,3 @@ body {
     color: #FAF8F1;
     font-family: "Iceberg", sans-serif;
 }
-
-.delivery-partner-info {
-    box-shadow: 2px -1px 22px 5px #DE1616;
-    margin: 30px;
-    font-family: "Iceberg", sans-serif;
-    color: white;
-    background-color: black;
-    padding: 70px;
-    border-radius: 10px;
-}
-
-.res-image{
-    border-radius: 40px;
-    padding: 20px 20px;
-    height: auto;
-    width: 50%;
-}

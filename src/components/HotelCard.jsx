@@ -2,8 +2,14 @@ import React from 'react';
 import '../styles/HotelCard.css';
 
 const CardComponent = ({imgUrl, hotelName, rating, cuisine, location,handleClick}) => {
+    const handleCardClick = (event) => {
+        event.preventDefault();
+        console.log(`Card clicked for hotel: ${hotelName}`);
+        handleClick();
+    };
+
     return (
-        <div className="card" onClick={handleClick}>
+        <div className="card" onClick={handleCardClick}>
             <img src={imgUrl} alt={hotelName} className="card-image" />
             <div className="card-info">
                 <div className="card-header">

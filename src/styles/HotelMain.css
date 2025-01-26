@@ -72,6 +72,7 @@ body{
   
   .menu {
     margin-top: 20px;
+    margin-bottom: 0;
   }
   
   .menu h2,
@@ -90,7 +91,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     padding: 30px;
-    gap : 40px
+    gap : 30px;
   }
 
   .btn{
@@ -102,10 +103,11 @@ body{
     color: #FAF8F1;
     border: none;
     border-radius: 5px;
+    margin-top: 50px;
   }
 
   .btn:hover{
-    transform: scaleY(1.2);
+    transform: scaleY(1.06);
   }
   
   

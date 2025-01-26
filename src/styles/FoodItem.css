@@ -58,7 +58,6 @@
     font-size: 18px;
     color: red;
     border: 1px solid red;
-    border-radius: 50%;
     width: 15px;
     height: 15px;
     display: flex;
@@ -83,11 +82,11 @@
   }
   
   .decrement {
-    background-color: #f44336;
+    background-color: red;
   }
   
   .increment {
-    background-color: #4caf50;
+    background-color: green;
   }
   
   .decrement:hover,.increment:hover{

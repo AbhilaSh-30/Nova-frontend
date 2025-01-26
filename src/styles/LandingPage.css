@@ -24,7 +24,8 @@ body {
 
 .nav-link {
     margin-top: 15px;
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
     color: #FAF8F1;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
