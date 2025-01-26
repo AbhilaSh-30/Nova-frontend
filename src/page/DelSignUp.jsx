@@ -7,7 +7,7 @@ const Del_SignUp = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/dsi`);
+    navigate(`/del-signin`);
   };
   return (
     <div className="signup-container">
@@ -26,6 +26,11 @@ const Del_SignUp = () => {
         <p>
           Have an account? <a href={`/dsi`}>Sign In</a>
         </p>
+        <div className="dialog-box">
+          <p>
+            Click <strong>Sign Up</strong> to move to next page.
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ const SignIn = () => {
   };
 
   const handleClick=()=>{
-    navigate(`/rl`);
+    navigate(`/res-list`);
   }
 
   return (
@@ -49,6 +49,11 @@ const SignIn = () => {
           <button type="submit" onClick={()=>handleClick()}>Sign In</button>
         </form>
         <p>Do not have an account? <a href={`/signup`}>Sign Up</a></p>
+        <div className="dialog-box">
+          <p>
+            Click <strong>Sign In</strong> to move to next page.
+          </p>
+        </div>
       </div>
     </div>
   );

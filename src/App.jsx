@@ -20,14 +20,14 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/rl" element={<RestaurantList />} />
+        <Route path="/res-list" element={<RestaurantList />} />
         <Route path="/cart" element={<OrderConfirmation/>} />
-        <Route path="/dp" element={<DeliveryPartner/>} />
-        <Route path='/rp' element={<RestaurantPage/>} />
-        <Route path='/rs' element={<Rest_SignUp />} />
-        <Route path="/rsi" element={<Rest_SignIn />} />
-        <Route path='/ds' element={<Del_SignUp />} />
-        <Route path="/dsi" element={<Del_SignIn />} />
+        <Route path="/del-partner" element={<DeliveryPartner/>} />
+        {/* <Route path='/rp' element={<RestaurantPage/>} /> */}
+        {/* <Route path='/rs' element={<Rest_SignUp />} /> */}
+        {/* <Route path="/rsi" element={<Rest_SignIn />} /> */}
+        <Route path='/del-signup' element={<Del_SignUp />} />
+        <Route path="/del-signin" element={<Del_SignIn />} />
         <Route path="/hotel/:hotelName" element={<HotelMain />} />
       </Routes>
     </div>

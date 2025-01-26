@@ -12,7 +12,7 @@ const LandingPage=()=>{
     const navigate = useNavigate();
 
     const handleClick=()=>{
-        navigate(`/rl`);
+        navigate(`/signIn`);
     }
     return(
         <>
@@ -23,7 +23,7 @@ const LandingPage=()=>{
                         <button class="dropbtn">Career</button>
                         <div class="dropdown-content">
                             {/* <a href={`/rs`}>Restaurant</a> */}
-                            <a href={`/ds`}>Delivery Partner</a>
+                            <a href={`/del-signin`}>Delivery Partner</a>
                         </div>
                     </div>
                     <a href={`/signin`} className="nav-link">Sign In</a>

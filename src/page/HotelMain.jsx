@@ -83,9 +83,14 @@ const HotelMain = () => {
             ))}
           </div>
           <div className="cart-button">
-            <button className="btn" onClick={handleCartClick}>
+            <button className="btn" onClick={handleCartClick} disabled={cartItems.length === 0 || cartItems.length > 10}>
               Go to Cart
             </button>
+          </div>
+          <div className="hotel-dialog-box">
+            <p>
+              Add <strong>Some Items(maximum 10)</strong> to move to next page.
+            </p>
           </div>
         </div>
       </div>

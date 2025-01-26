@@ -26,6 +26,11 @@ const SignUp = () => {
         <p>
           Have an account? <a href={`/signIn`}>Sign In</a>
         </p>
+        <div className="dialog-box">
+          <p>
+            Click <strong>Sign Up</strong> to move to next page.
+          </p>
+        </div>
       </div>
     </div>
   );
